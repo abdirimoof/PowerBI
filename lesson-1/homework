@@ -1,1 +1,50 @@
 
+1.	Power BI is a powerful business analytics service developed by Microsoft that enables individuals and organizations to visualize their data, share insights, and make informed decisions. Think of it as your data’s best storyteller—it takes raw numbers and turns them into interactive dashboards and rich reports.
+2	Sales Performance Monitoring
+Operations and Supply Chain Management
+      3   Microsoft Store
+      4 Power BI Desktop
+•	Installed on your computer (Windows only).
+•	Used primarily for data preparation, modeling, and designing reports.
+•	Offers powerful tools for cleaning, transforming, and combining data from multiple sources.
+•	Ideal for analysts and developers who need full control before sharing content.
+☁️ Power BI Service
+•	Web-based platform you access through a browser.
+•	Lets you publish, view, and share reports and dashboards with others.
+•	Supports features like scheduled refresh, collaboration, and real-time dashboard updates.
+•	Great for end users, managers, and teams who need access to live, interactive insights.
+5 pbx
+6   Power Query is a data connection and transformation tool built into Power BI (also available in Excel). It helps you import, clean, shape, and transform raw data from multiple sources so it's ready for analysis.
+7  One that’s top of mind for many data-driven organizations. While Excel is a long-trusted tool for reporting and analysis, Power BI takes things up several notches for today’s fast-moving business world.
+8. One key limitation of the free version of Power BI is its restricted sharing and collaboration features.
+9. A "published report" in Power BI Service is like the final cut of a movie—crafted in Power BI Desktop, then pushed to the cloud so others can watch, interact with, and learn from it.
+10. Power BI Mobile supercharges accessibility by making business insights available anytime, anywhere, and to anyone with a connected device.
+       11. •  Choose Power BI if you're looking for a cost-effective, easy-to-use tool that integrates        well with Microsoft products.
+•	Choose Tableau if you need advanced visualizations, work with large datasets, and have a team of experienced analysts
+12. Seamless Data Connectivity
+Power BI connects effortlessly with a wide range of Azure data services, including:
+•	Azure SQL Database and Azure Synapse Analytics for structured data
+•	Azure Data Lake Storage for big data and unstructured files
+•	Azure Cosmos DB for NoSQL and globally distributed data
+•	Azure Blob and Table Storage for scalable cloud storage
+   13. In Power BI, gateways act as secure bridges between your on-premises data and the Power BI cloud service. They allow you to keep your data where it lives—inside your company’s network—while still using Power BI to analyze and visualize it in the cloud.
+  14. A Power BI gateway is software you install on a local machine (usually a server) that enables secure data transfer between:
+•	On-premises data sources (like SQL Server, Oracle, Excel files, etc.)
+•	Cloud-based services like Power BI, Power Apps, Power Automate, and Azure Logic Apps
+15. Power BI offers a robust suite of security features designed to protect sensitive data at every stage—from ingestion to sharing.
+Data Encryption
+•	In transit: All data is encrypted using HTTPS and TLS protocols.
+•	At rest: Stored data is encrypted using Microsoft-managed keys or customer-managed keys (CMK) for added control.
+•	
+•	. Role-Based Access Control (RBAC)
+•	Assigns permissions based on user roles.
+•	Ensures users only access the data and reports relevant to their responsibilities.
+
+
+
+
+
+
+
+
+
