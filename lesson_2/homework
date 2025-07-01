@@ -1,0 +1,72 @@
+1Excel , Sql Server,  csv
+2. Click on “Get Data, Choose your desired data source , Click “Connect
+3. On the Home tab, click “Refresh”.
+4. Excel, csv
+5. In Power BI Desktop, once you've chosen a data source, the Navigator window appears to help you decide exactly what you want to import. 
+6. done
+7. •  Click the small icon to the left of the column name (it might look like "ABC" or a calendar).Select “Date” from the dropdown list of data types.
+8. Load
+•	What it does: Brings your selected data straight into Power BI.
+•	When to use: If your data is already clean and ready to use—no changes needed.
+•	Result: You can immediately start building reports and visuals using the imported data.
+ Transform Data
+•	What it does: Opens the Power Query Editor, where you can clean, shape, and modify your data before loading.
+•	When to use: If your data needs adjustments—like removing columns, changing data types, filtering rows, merging tables, or renaming fields.
+•	Result: Once you're satisfied with the changes, you click Close & Apply to load the transformed data into Power BI.
+9. Authentication Failure
+If your credentials (username and password) are incorrect, expired, or you don’t have permission to access that specific database, Power BI will block the connection attempt
+10. •  Go to “Transform Data”
+From the Home tab, click “Transform Data” to open the Power Query Editor.
+Access Data Source Settings
+In the Power Query Editor:
+Click “Data source settings” on the Home ribbon.
+A window will appear showing all the data sources used in your report.
+Select and Change Source
+Choose the data source you want to replace.
+Click “Change Source...”.
+Enter the new source path, server name, or database connection string depending on the type of source.
+Confirm and Apply Changes
+After updating, click OK, then Close & Apply to load the data from the new source into your report.
+11. let
+    Source = YourDataSourceHere,
+    FilteredRows = Table.SelectRows(Source, each [Quantity] > 1)
+in
+    FilteredRows
+12. Open Power Query Editor
+Go to the Home tab and click “Transform Data” to launch the Power Query Editor.
+View Applied Steps
+In the Queries pane, select the query connected to Sales_Data.csv. Look at the “Source” step in the Applied Steps pane.
+Edit File Path
+Click the gear icon ⚙️ next to the “Source” step.
+Update the path to the new file or browse to the new version of Sales_Data.csv.
+Click OK.
+13. Clean the Data (Optional but Helpful)
+o	Replace or remove problematic values:
+Use Transform > Replace Values or Remove Rows > Remove Errors.
+o	If it’s a number column with some text entries like “N/A”, you might replace “N/A” with null.
+     Set the Correct Data Type
+o	Click the data type icon next to the column name (e.g., “ABC123”).
+o	Choose the desired type, like Whole Number, Decimal Number, or Date.
+14. •  In Power BI Desktop, go to Home > Get Data > SQL Server.
+o	Server name
+o	Database name (optional if browsing available databases)
+o	Choose DirectQuery mode (for a live connection), then click OK.
+15. •  Go to Power Automate and create a new flow (e.g., Scheduled or Instant).
+1.	Choose a trigger like:
+•	Scheduled flow – refresh every hour/day.
+•	HTTP request, button press, email arrival, or even Excel file drop in OneDrive.
+🔁 Step 3: Add the Power BI Action
+•	Add an action called:
+“Refresh a dataset” (under Power BI connector).
+•	Configure:
+•	Workspace where the dataset lives.
+•	Dataset name.
+
+
+
+
+
+
+
+
+
