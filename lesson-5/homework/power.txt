@@ -1,0 +1,29 @@
+1. Uniqueness: No two rows can have the same value for the primary key. It guarantees that each record is distinct.
+   Non-nullable: It can’t contain NULL values—every row must have a value.
+   Immutable (ideally): Once set, it's usually not changed, because changing it could affect relationships across tables.
+2. One-to-Many
+   Many-to-Many
+3. Go to the Modeling tab in Power BI Desktop.
+   Click Manage Relationships > New.
+   Select the first table and the column you want to use.
+   Select the second table and its corresponding column.
+4. A star schema is a type of data modeling technique used in data warehousing and business intelligence. It’s called a “star” because of its layout: a central fact table surrounded by multiple dimension tables, forming a shape like a star 1 2 3.
+5. saless
+6. 
+7. The ProductID in Sales.csv is considered a foreign key because it connects the Sales table to another table—specifically the Products table—in your data model.
+8. Go to Transform > Data Type and choose the correct type (usually Whole Number for IDs).
+9. A star schema is a powerful design choice in data warehousing because it streamlines query performance and simplifies data analysis.
+10. 
+11. Consider whether the relationship truly reflects business logic or if the tables can be restructured into more intuitive hierarchies.
+    Use Bridge Tables Introduce a bridge table to decouple the relationship. For example, if Table A and Table B both connect to Table C and create a loop, you can create a bridge that holds shared keys or attributes and routes relationships through that.
+13. Itis impossibl
+14. In Role-Based Security Models When implementing row-level security, you may use bidirectional filtering between user tables and data tables so filters flow both ways. It helps maintain context across roles without duplicating logic.
+15. Valid Sales = 
+CALCULATE (
+    SUM(FactSales[SalesAmount]),
+    FILTER (
+        FactSales,
+        FactSales[CustomerID] IN VALUES(Customers[CustomerID])
+    )
+)
+    
