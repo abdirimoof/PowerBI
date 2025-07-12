@@ -1,0 +1,6 @@
+5.The "Data/Model" view is where the architecture of your Power BI report truly comes alive.
+13. Go to Model view and ensure there’s a valid relationship between the slicer’s table and the tables used in your visuals.
+
+Use a central dimension table (like Region or Date) and link it to your fact tables.
+
+Set cross-filter direction to single or both, depending on your model needs
