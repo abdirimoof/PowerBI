@@ -1,0 +1,20 @@
+1. Bar & Column Chart#
+   Map Visuals 
+    Cards & KPI
+2. Go to the Visualizations pane.
+   Click the Slicer icon
+3. Bar Chart: Ideal when category names are long or you have lots of them—since horizontal layout keeps things readable.
+   Column Chart: Great for tracking changes over time, like monthly sales or year-over-year growth.
+4. - Select the Visual
+- Click on the chart or card you want to modify.
+- Open the Format Pane
+- On the right-hand side, look for the Format icon (paint roller).
+- Find the "Background" Option
+- Scroll through the formatting options until you find Background.
+- Toggle Background On
+- Set the switch to On if it’s not already enabled.
+- Choose Your Color
+- Click the color box to select a new background color.
+- Optionally adjust transparency with the slider.
+5. “Drill-down” in a visual means diving deeper into your data hierarchy—clicking your way from a broad overview into the finer details
+6. 	
