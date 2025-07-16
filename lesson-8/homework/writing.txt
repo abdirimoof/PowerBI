@@ -1,0 +1,34 @@
+1. In Power BI, DAX stands for Data Analysis Expressions. 🧠
+
+It’s a specialized formula language designed for:
+
+Creating custom calculations in Power BI, Excel Power Pivot, and SQL Server Analysis Services
+
+Building powerful, dynamic measures and calculated columns
+
+Enabling advanced data modeling beyond what basic formulas can do in Excel
+
+🔧 Think of it like Excel formulas on steroids—optimized for working with large datasets, relationships, and time-based analysis
+
+3. Calculated Column
+Created row by row: Adds a new column to a table where each row has a value calculated using DAX.
+
+Stored in the data model: The results are saved with the data, which means it takes up memory.
+
+Useful for filtering and grouping: Can be used in slicers, visual axes, and to categorize data.
+
+Measure
+Calculated on the fly: Evaluated only when needed (e.g., when a report is generated).
+
+Doesn't use memory the same way: Much lighter because it’s not stored per row.
+
+Perfect for aggregations: Used to sum, average, count, etc., often depending on context.
+5. COUNTROWS() in DAX is a function used to count the number of rows in a table or table expression.
+9. Circular Dependency Error in Power BI In Power BI, a circular dependency error happens when a calculated column relies on another column that—directly or indirectly—depends on the original column. It’s like chasing your own tail in logic: the calculation loops back onto itself, which Power BI can’t resolve.
+
+💡 Why it happens: Power BI needs to compute columns in a specific sequence, and it builds a dependency tree to figure out the order. If your formula creates a loop, Power BI gets confused because it can’t decide which column to calculate first.
+10. Filter Context
+This kicks in when a calculation is performed in a measure, or during visual interactions like slicers or filters. It defines which rows are included in the calculation based on filters applied through visuals or DAX.
+Row Context
+This refers to the current row being evaluated—most commonly in calculated columns or iterators like SUMX, FILTER, etc. It’s like saying:
+11. 
