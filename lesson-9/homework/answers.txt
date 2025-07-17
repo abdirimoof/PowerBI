@@ -1,0 +1,14 @@
+5. In DAX, VAR and RETURN are used together to make your expressions more readable, optimized, and logical — especially in measures or calculated columns.
+9. Go to Model view in Power BI.
+
+Ensure a valid relationship exists:
+
+Customers[CustomerID] → Sales[CustomerID]
+
+Direction: From Customers to Sales.
+
+Set the cardinality to one-to-many with Customers as "one".
+
+Ensure both CustomerID columns are the same data type.
+
+10. In DAX, CALCULATE isn’t just a passive function — it’s a filter-shaping powerhouse. When you use CALCULATE, you're essentially telling your measure or expression: “Reevaluate this calculation, but first, adjust the filter context.”
