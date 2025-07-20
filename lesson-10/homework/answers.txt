@@ -1,0 +1,18 @@
+2. ALL(Sales)
+Removes all filters on every column in the Sales table.
+
+Returns the entire Sales table, ignoring any filters (like on Region, Product, Date, etc.).
+ALLEXCEPT(Sales, Sales[Region])
+Removes filters from all columns in Sales, except the Region column.
+
+Keeps only the filter(s) on Sales[Region] — all other filters (like Product, Date, etc.) are removed.
+5.Compare with Similar Functions
+Function	Keeps Slicer Filters	Keeps Visual Filters	Use Case
+ALL()	        ❌ No	                ❌ No	                Remove all filters from table/column
+ALLEXCEPT()	✅ Yes (partial)	❌ No			Remove all filters except specified ones
+ALLSELECTED()	✅ Yes	                ❌ No			Respect slicers, ignore visual filters
+10. ALLSELECTED can behave unexpectedly in a pivot table because it depends heavily on user selections and visual context, which behave differently in pivot tables compared to other visuals like cards or bar charts.
+
+14.Matrix visuals apply filters from added fields, which can change the context in which your measure is evaluated. This can interfere with internal logic that assumes a higher or flatter context.
+
+✅ Fix: If needed, remove unwanted filters using REMOVEFILTERS or ALLSELECTED in your calculations.
