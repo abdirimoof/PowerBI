@@ -1,0 +1,33 @@
+Use Variables (VAR) to Avoid Repetition
+Why: Every repeated calculation gets re-evaluated, even if the result doesn’t change.
+
+Benefit: Improves readability and performance by storing intermediate results for reuse.
+
+Example: Instead of calling CALCULATE(SUM(...)) twice, store it once in a variable.
+
+2️⃣ Minimize Use of Row Context Functions (like FILTER, SUMX)
+Why: Iterators like SUMX or FILTER can be powerful but expensive if misused over large tables.
+
+Benefit: Prefer column-based aggregations (SUM, CALCULATE) when possible to reduce query execution time.
+
+3️⃣ Avoid Using ALL() Unless Necessary
+Why: Removing filters with ALL() can increase computation overhead and lead to unexpected results in visuals.
+
+Benefit: Keep your context tight for faster, more meaningful queries. Use REMOVEFILTERS() or ALLSELECTED() if you need more control.
+
+4️⃣ Pre-calculate and Stage Metrics if Reused Often
+Why: Repeated logic across multiple measures increases load time and complexity.
+
+Benefit: Create reusable base measures (like Total Sales, YoY Growth) and reference them. Modular design improves maintainability.
+
+5️⃣ Leverage Time Intelligence Functions Smartly
+Why: Calculating prior periods manually can slow performance and complicate your logic.
+
+Benefit: Use built-in functions like DATEADD(), SAMEPERIODLASTYEAR(), or PARALLELPERIOD() instead of custom logic—they’re optimized under the hood.
+
+
+
+
+
+
+Using DAX optimization tools like DAX Studio, Performance Analyzer, and Tabular Editor is like upgrading from a bicycle to a race car when working with Power BI models 🏎️. Each tool brings unique strengths to help you write better DAX, diagnose bottlenecks, and streamline your development workflow.
